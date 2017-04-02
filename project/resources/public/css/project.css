@@ -1,0 +1,97 @@
+body {
+	font-family: segoe ui;
+	font-size: 14px;
+	background-color: #00cc66;
+	text-align: center;
+	margin: 0px;
+}
+
+.container {
+	background-color: white;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	height: 700px;
+}
+
+.title {
+	margin-top: 0px;
+	padding-top: 30px;
+}
+
+.title-second {
+	margin-bottom: 30px;
+}
+
+.button-add {
+	border: 1px solid #999999;
+	border-radius: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: linear-gradient(white, lightgray);
+	color: buttontext;
+	font-family: arial;
+	font-size: 13.3px;
+	text-decoration: none;
+}
+
+.button-add:active {
+	background: linear-gradient(lightgray, white);
+}
+
+.table-main {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 10px;
+}
+
+.table-main thead tr th {
+	border: 1px solid darkgray;
+	padding-top: 5px;
+}
+
+.table-main tbody tr td {
+	padding-top: 10px;
+	border-bottom: 1px solid lightgray;
+}
+
+.table-details {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 30px;
+}
+
+.table-details tr td input{
+	padding: 5px;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+
+.details-title {
+	margin-top: 0px;
+	padding-top: 30px;
+	margin-bottom: 40px;
+}
+
+hr {
+	border: 0px;
+	border-top: 1px solid lightgray;
+	width: 80%;
+	margin: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.search {
+	float: right;
+	position: relative;
+	left: -10px;
+}
+
+.move-right {
+	position: relative;
+	left: 10px;
+}
