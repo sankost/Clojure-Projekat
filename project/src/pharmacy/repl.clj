@@ -21,7 +21,7 @@
                     :auto-reload? true
                     :destroy destroy
                     :join true}))
-    (println (str "You can view the site at http://localhost:" port))))
+    (println (str "http://localhost:" port))))
 
 (defn stop-server []
   (.stop @server)
