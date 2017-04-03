@@ -7,12 +7,9 @@
                  [hiccup-table "0.2.0"]
                  [ring-server "0.3.1"]
                  [org.clojure/java.jdbc "0.2.3"]
-                 ;[org.xerial/sqlite-jdbc "3.7.2"]
                  [mysql/mysql-connector-java "5.1.18"]]
   :plugins [[lein-ring "0.8.12"]]
-  :ring {:handler pharmacy.handler/app
-         :init pharmacy.handler/init
-         :destroy pharmacy.handler/destroy}
+  :ring {:handler pharmacy.handler/app}
   :profiles
   {:uberjar {:aot :all}
    :production

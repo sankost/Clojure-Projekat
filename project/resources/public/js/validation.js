@@ -10,12 +10,12 @@ function validate() {
         return false;
     }
     var price = document.getElementById("price").value;
-    if (price == null || price == "" || (isNaN(price))) {
+    if (price == null || price == "" || (isNaN(price)) || price <= 0) {
         alert("Please enter a valid price.");
         return false;
     }
     var quantity = document.getElementById("quantity").value;
-    if (quantity == null || quantity == "" || (isNaN(quantity))) {
+    if (quantity == null || quantity == "" || (isNaN(quantity)) || quantity < 0) {
         alert("Please enter a valid quantity.");
         return false;
     }

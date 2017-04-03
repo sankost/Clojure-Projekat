@@ -1,10 +1,18 @@
 # project
 
-A Clojure library designed to ... well, that part is up to you.
+
+## Requirements
+
+You must have MySql database server active (trough WAMP, XAMP ect.)
+It is necessary to import db.sql database.
+
+You will need Leiningen installed:
+https://leiningen.org/
 
 ## Usage
 
-FIXME
+For staring a web server run:
+    lein ring server
 
 ## License
 

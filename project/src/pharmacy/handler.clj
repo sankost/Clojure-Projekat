@@ -8,13 +8,6 @@
             [pharmacy.models.db :as db]
             [pharmacy.routes.home :refer [home-routes]]))
 
-(defn init []
-  (if-not (.exists (java.io.File. "./db.sql"))
-    (db/create-table)))
-
-(defn destroy []
-  (println "Shutting down"))
-
 (defroutes app-routes
   (route/resources "/")
   (route/not-found "Page not found!"))

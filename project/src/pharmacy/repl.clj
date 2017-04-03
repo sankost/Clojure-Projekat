@@ -17,9 +17,7 @@
     (reset! server
             (serve (get-handler)
                    {:port port
-                    :init init
                     :auto-reload? true
-                    :destroy destroy
                     :join true}))
     (println (str "http://localhost:" port))))
 

@@ -15,7 +15,7 @@
   [:table {:class "table-main"}
    [:thead
     [:tr
-     [:th "Name"]
+     [:th "Medicine"]
      [:th "Type"]
      [:th "Price"]
      [:th "Quantity"]
@@ -37,13 +37,6 @@
     [:h2 {:class "title-second"}
      "List of medicines:"]
     [:a {:href "/add" :class "button-add move-right" :style "float: left"} "Add new"]
-    [:div {:class "search"}
-    (form-to {:id "frm_insert" :class "register" :method "GET"}
-         [:get "/search"]
-         (text-field "search")"&nbsp&nbsp"
-         (submit-button "Search")"&nbsp&nbsp"
-         [:a {:href "/" :class "button-add"} "Reset"]
-    )]
     [:br]
     [:br]
     (show-all)))
@@ -116,6 +109,4 @@
   (GET "/details/:id" [id](show-medicine (db/find id)))
   (GET "/add" [](insert_or_update))
   (POST "/save" [name type price quantity available id](save name type price quantity available id))
-  (GET "/delete/:id" [id](delete id))
-  ;(GET "/search" [](search))
-  )
+  (GET "/delete/:id" [id](delete id)))
