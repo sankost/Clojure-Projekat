@@ -3,7 +3,7 @@
 
 ## Requirements
 
-You must have MySql database server active (trough WAMP, XAMP ect.)
+You must have MySql database server active (through WAMP, XAMPP etc.)
 It is necessary to import db.sql database.
 
 You will need Leiningen installed:
